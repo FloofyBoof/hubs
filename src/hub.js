@@ -61,6 +61,7 @@ import Cookies from "js-cookie";
 import { DIALOG_CONNECTION_ERROR_FATAL, DIALOG_CONNECTION_CONNECTED } from "./naf-dialog-adapter";
 import "./change-hub";
 
+import "./components/canvas-quiz-viewer";
 import "./components/scene-components";
 import "./components/mute-mic";
 import "./components/bone-mute-state-indicator";
