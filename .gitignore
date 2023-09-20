@@ -70,3 +70,6 @@ src/assets/locales/extracted-messages.json
 
 # Jetbrains
 .idea
+
+# Ignore API config file
+/api-config.js
