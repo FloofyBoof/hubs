@@ -1,5 +1,5 @@
 import axios from "axios";
-import { API_BASE_URL, API_KEY } from "../../api-config";
+import { API_BASE_URL } from "../../api-config";
 
 axios.defaults.baseURL = API_BASE_URL;
 
@@ -7,6 +7,7 @@ const COURSE_ID = 70814;
 
 AFRAME.registerComponent("canvas-quiz-viewer", {
   init() {
+    console.log(API_BASE_URL);
     console.log("Canvas Quiz Viewer: Hello World");
 
     this.textElement2 = document.createElement("a-entity");
@@ -45,6 +46,5 @@ AFRAME.registerComponent("canvas-quiz-viewer", {
     this.questionText.setAttribute("text", `value: ${questionText}`);
     this.questionText.setAttribute("position", "0 -0.2 0");
     this.el.appendChild(this.questionText);
-
   }
 });
